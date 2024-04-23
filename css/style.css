@@ -1,0 +1,310 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.above-nav-section{
+        height: 3rem;
+    }
+
+.above-nav-left-navi a{
+    color: #6c757d;
+
+}
+
+.fa-heart,.fa-0,.fa-cart-shopping{
+    color: #3d464d;
+}
+
+
+.web-logo h1 .span-multi{
+    font-size: 2.5rem;
+    color: #FFD333;
+    background-color: #3D464D;
+}
+.web-logo h1 .span-shop{
+    font-size: 2.5rem;
+    color: #3D464D;
+    background-color:#FFD333 ;
+}
+
+.product-search{
+    width: 35%;
+}
+
+.product-search-icon{
+color: #ffd333;
+}
+.call-us-block{
+    color: #6c757d;
+}
+.nav-phone-number{
+    font-size: 1.25rem;
+}
+
+.first-nav-section{
+    background-color: #ffffff;
+}
+
+@media(width<992px){
+    .first-nav-section{
+        background-color:#3D464D !important ;
+    }
+    .web-logo h1 .span-multi{
+        font-size: 2rem;
+        color: #3D464D;
+        background-color: #ffffff;
+    }
+    .web-logo h1 .span-shop{
+        font-size: 2rem;
+        color: #ffffff;
+        background-color:#FFD333 ;
+    }
+    .logo-class{
+        padding-top: 0.5rem;
+    }
+
+}
+
+.second-nav-section{
+    background-color: #3D464D;
+}
+
+.categories-drop{
+    background-color: #FFD333;
+}
+
+.second-nav-heart{
+    color: #FFD333;
+}
+.second-nav-cart{
+    color: #FFD333;
+}
+
+.second-nav-zero{
+    color: #ffffff;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 1rem;
+    height: 1rem;
+}
+.carousel-indicators{
+    margin-bottom: 0;
+}
+.carousel-caption{
+    position: absolute;
+    top: 15%;
+}
+
+.carousel-caption h2{
+    font-size: 3.5rem;
+}
+
+.right-top-offer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.391)) , url(../images/Carousel-section/offer-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.offer-btn{
+    background-color: #ffd333;
+}
+.offer-btn:hover {
+    color: black;
+    background-color: #ffd333;
+    border-color: #FFD333;
+}
+
+.right-below-offer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.391)) , url(../images/Carousel-section/offer-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-img-container{
+    height: 368px;
+    position: relative;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#000000af,#00000020);
+}
+
+@media (width<500px){
+    .carousel-caption h2{
+        font-size: 2.5rem;
+    }
+}
+@media (width<400px){
+    .carousel-caption h2{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+}
+
+.banner-logo{
+    color: #FFD333;
+    font-size: 2.5rem;
+}
+.banner-class-name{
+    color: #3d464d;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.categories-name h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3D464D;
+}
+
+.dotted-border{
+    width: 90%;
+    border-top: 1px dashed #3D464D;
+}
+
+.category-box{
+    height: 6.25rem;
+}
+
+.category-box-name ,.featured-box-name{
+    font-weight: 700;
+    color: #3D464D;
+}
+.featured-box-name:hover{
+    color: #e6b400;
+}
+.category-box-para{
+    color: #6c757d;
+}
+
+.dashed-border{
+    width: 70%;
+    border-top: 1px dashed #3D464D;
+}
+
+.featured-box-para{
+    color: #3d464d;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.featured-price{
+    color: #6c757d;
+}
+.number-shopping{
+    color: #6c757d;
+}
+
+.fullstar{
+    color: #ffd333;
+}
+
+.main-top-offer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.391)) ,url(../images/Carousel-section/offer-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+}
+
+.main-top-offer div ,.main-below-offer div{
+    padding: 6rem;
+}
+
+
+.main-below-offer{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.391)) , url(../images/Carousel-section/offer-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+}
+
+
+.footer-section{
+    background-color: #3d464d;
+}
+
+.footer-heading{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.footer-heading-h4{
+    font-size: 1rem;
+    padding-top: 2rem;
+    font-weight: 700;
+}
+
+.fa-angle-right{
+    font-weight: 700;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.fa-location-dot ,.fa-envelope,.fa-phone{
+    color: #ffd333;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+.footer-sign{
+    height: 2.5rem;
+    background-color: #FFD333;
+}
+
+[placeholder="Your Email Address"]{
+    padding-left: 1rem;
+}
+
+
+.social-media .fa-square-twitter,.social-media .fa-square-facebook,.social-media .fa-linkedin ,.social-media .fa-square-instagram{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size:2.5rem;
+    color: #ffd333;
+}
+
+.domain-color a{
+    color: #ffd333;
+}
+
+[src="./images/footer/payments.png" ]{
+    height: 1.5rem;
+    width: 90%;
+}

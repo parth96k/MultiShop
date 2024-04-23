@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Shop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section class="above-nav-section container-fluid ">
+        <section class="container d-flex justify-content-between ">
+            <div class="pt-3  d-none d-lg-block">
+                <ul class="d-flex ps-0">
+                    <li class="above-nav-left-navi me-3"><a href="">About</a></li>
+                    <li class="above-nav-left-navi me-3"><a href="">Contacts</a></li>
+                    <li class="above-nav-left-navi me-3"><a href="">Help</a></li>
+                    <li class="above-nav-left-navi me-3"><a href="">FAQs</a></li>
+                </ul>
+            </div>
+            <div class=" d-flex mx-auto mx-lg-0 pt-lg-2">
+                <div class="dropdown me-2">
+                    <button type="button" class="dropdown btn-lg p-sm-2  bg-white" data-bs-toggle="dropdown">My Accout<i
+                            class="fa-solid fa-caret-down ms-2"></i></button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="" class="text-reset text-decoration-none">Sign
+                                in</a></li>
+                        <li class="dropdown-item"><a href="" class="text-reset text-decoration-none">Sign
+                                up</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown me-2">
+                    <button type="button" class="dropdown btn-lg p-sm-2 bg-white" data-bs-toggle="dropdown">USD<i
+                            class="fa-solid fa-caret-down ms-2"></i></button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="" class="text-reset text-decoration-none">GDP</a></li>
+                        <li class="dropdown-item"><a href="" class="text-reset text-decoration-none">EUR</a></li>
+                        <li class="dropdown-item"><a href="" class="text-reset text-decoration-none">CAD</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button type="button" class="dropdown btn-lg p-sm-2 bg-white" data-bs-toggle="dropdown">EN<i
+                            class="fa-solid fa-caret-down ms-2"></i></button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item text-success"><a href="" class="text-reset text-decoration-none">FR</a>
+                        </li>
+                        <li class="dropdown-item text-success"><a href="" class="text-reset text-decoration-none">AR</a>
+                        </li>
+                        <li class="dropdown-item text-success"><a href="" class="text-reset text-decoration-none">RU</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="d-lg-none">
+                    <button type="button" class="btn">
+                        <i class="fa-solid fa-heart"></i><span class="badge"><i class="fa-solid fa-0"></i></span>
+                    </button>
+                </div>
+                <div class="d-lg-none">
+                    <button type="button" class="btn ps-0 pe-0"><i class="fa-solid fa-cart-shopping"></i><span
+                            class="badge"><i class="fa-solid fa-0"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="first-nav-section container-fluid mt-2 mt-sm-0 ">
+        <section class="first-nav-con container-lg ">
+            <div class="navbar navbar-expand-lg justify-content-between">
+                <div class="logo-class d-flex">
+                    <div class="web-logo">
+                        <a href="">
+                            <h1><span class="span-multi p-2 fw-semibold">MULTI</span><span
+                                    class="span-shop p-2 fw-semibold">SHOP</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-search d-none d-lg-block ">
+                    <form action="">
+                        <div class="product-search-div input-group">
+                            <input type="search"
+                                class="product-search-input form-control form-select-lg px-3 py-1 rounded-0 border-2"
+                                placeholder="Search for products">
+                            <span class="product-search-icon input-group-text rounded-0 border-2 "><i
+                                    class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar d-lg-none">
+                    <button class="navbar-toggler border-white rounded-0 " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#myOffcanvas ">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                </div>
+                <div class="social-block d-none d-lg-block ">
+                    <div class="call-us-block ps-2">Customer Service</div>
+                    <div class="nav-phone-number fw-semibold ">+012 345 6789</div>
+                </div>
+
+            </div>
+        </section>
+    </section>
+    <section class="second-nav-section container-fluid d-none d-lg-block">
+        <section class="second-nav-con container ">
+            <div class="navbar navbar-expand-lg justify-content-between py-0">
+                <div class="logo-class d-flex justify-content-between">
+                    <div class="categories-drop ">
+                        <a href="" class="text-reset">
+                            <div class="d-flex">
+                                <div class="ps-4 pt-3"><i class="fa-solid fa-bars "></i></div>
+                                <div class="ps-1 pt-3 pe-4">
+                                    <p>Categories</p>
+                                </div>
+                                <div class="pt-3 pe-4"> <i class="fa-solid fa-angle-down ms-5"></i></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ms-5 text-white">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container-fluid">
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <a class=" nav-link active text-white" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link text-white" href="#">Shop</a>
+                                        <a class="nav-link text-white" href="#">Shop Detail</a>
+                                        <a class="nav-link text-white" href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="nav-link text-white" href="#">Contact</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="">
+                    <button type="button" class="btn">
+                        <i class="second-nav-heart fa-solid fa-heart"></i><span class="badge"><i
+                                class="second-nav-zero fa-solid fa-0"></i></span>
+                    </button>
+                    <button type="button" class="btn ps-0 pe-0"><i
+                            class="second-nav-cart fa-solid fa-cart-shopping"></i><span class="badge"><i
+                                class="second-nav-zero fa-solid fa-0"></i></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container-fluid mt-4">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+                    <section class="carousel slide" data-bs-ride="carousel" id="mySlider ">
+
+                        <!-- Indicator -->
+                        <div class="carousel-indicators">
+                            <button type="button" class="active " data-bs-target="#mySlider"
+                                data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#mySlider" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- Item -->
+                        <section class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <div class="carousel-img-container">
+                                    <img src="./images/Carousel-section/carousel-1.jpg" alt="carousel-1"
+                                        class="carousel-img">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h2>Mens Fashion</h2>
+                                    <p class="px-3">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet
+                                        amet amet ndiam elitr ipsum diam</p>
+                                    <button type="button"
+                                        class="btn text-white border-white border-1 rounded-0 fw-bolder">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-img-container">
+                                    <img src="./images/Carousel-section/carousel-2.jpg" alt="carousel-2" class="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h2>Women Fashion</h2>
+                                    <p class="px-3">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet
+                                        amet amet ndiam elitr ipsum diam</p>
+                                    <button type="button"
+                                        class="btn text-white border-white border-1 rounded-0 fw-bolder">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="carousel-img-container">
+                                    <img src="./images/Carousel-section/carousel-3.jpg" alt="carousel-3" class="">
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="carousel-caption">
+                                    <h2>Kids Fashion</h2>
+                                    <p class="px-3">Lorem rebum magna amet lorem magna erat diam stet. Sadips duo stet
+                                        amet amet ndiam elitr ipsum diam</p>
+                                    <button type="button"
+                                        class="btn text-white border-white border-1 rounded-0 fw-bolder">Shop
+                                        Now</button>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="right-top-offer mb-4">
+                        <div class="text-center p-4">
+                            <h6 class="text-white fw-semibold mb-2">SAVE 20%</h6>
+                            <h3 class="text-white fw-semibold mb-3">Special Offer</h3>
+                            <button type="button" class="offer-btn btn rounded-0 mb-2">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="right-below-offer">
+                        <div class="text-center p-4">
+                            <h6 class="text-white fw-semibold mb-2">SAVE 20%</h6>
+                            <h3 class="text-white fw-semibold mb-3">Special Offer</h3>
+                            <button type="button" class="offer-btn btn rounded-0 mb-2">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container-fluid pt-5">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center p-4 bg-white">
+                        <div>
+                            <i class="banner-logo fa-solid fa-check pe-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="banner-class-name mb-0 pt-2">Quality Product</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center p-4 bg-white">
+                        <div>
+                            <i class="banner-logo fa-solid fa-truck-fast pe-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="banner-class-name mb-0 pt-2">Free Shipping</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center p-4 bg-white">
+                        <div>
+                            <i class="banner-logo fa-solid fa-arrow-right-arrow-left pe-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="banner-class-name mb-0 pt-2">14-Day Return</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="d-flex justify-content-center bg-white p-4">
+                        <div>
+                            <i class="banner-logo fa-solid fa-phone-volume pe-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="banner-class-name mb-0 pt-2">24/7 Support</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <section class="container-fluid py-5 m-0">
+        <section class="container">
+            <div class="d-flex pb-3">
+                <div class="categories-name">
+                    <h3 class="text-uppercase pe-3">Categories</h3>
+                </div>
+                <div class="dotted-border mt-3"></div>
+            </div>
+
+            <section class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-1.jpg" alt="cat-1"></div>
+                        <div class=" align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-2.jpg" alt="cat-2"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-3.jpg" alt="cat-3"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-4.jpg" alt="cat-4"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-4.jpg" alt="cat-4"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-3.jpg" alt="cat-3"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-2.jpg" alt="cat-2"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-1.jpg" alt="cat-1"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-2.jpg" alt="cat-2"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-1.jpg" alt="cat-1"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-4.jpg" alt="cat-4"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="category-box d-flex bg-white">
+                        <div><img src="./images/categories-images/cat-3.jpg" alt="cat-3"></div>
+                        <div class="align-self-center ps-3">
+                            <h6 class="category-box-name ">Category Name</h6>
+                            <p class="category-box-para mb-0"><small>100 Product</small></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <section class="container-fluid py-5">
+        <section class="container">
+            <div class="d-flex pb-3">
+                <div class="categories-name">
+                    <h3 class="text-uppercase pe-3">Featured Products</h3>
+                </div>
+                <div class="dashed-border mt-3"></div>
+            </div>
+
+            <section class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-1.jpg" alt="product-1"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-2.jpg" alt="product-2"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-3.jpg" alt="product-3"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-4.jpg" alt="product-4"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-5.jpg" alt="product-5"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-6.jpg" alt="product-6"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-7.jpg" alt="product-7"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-8.jpg" alt="product-8"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <section class="container-fluid">
+        <section class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="main-top-offer mb-4">
+                        <div class=" text-center">
+                            <h6 class="text-white fw-semibold mb-2 ">SAVE 20%</h6>
+                            <h3 class="text-white fw-semibold mb-3">Special Offer</h3>
+                            <button type="button" class="offer-btn btn rounded-0 mb-2">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="main-below-offer">
+                        <div class="text-center">
+                            <h6 class="text-white fw-semibold mb-2">SAVE 20%</h6>
+                            <h3 class="text-white fw-semibold mb-3">Special Offer</h3>
+                            <button type="button" class="offer-btn btn rounded-0 mb-2">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="container-fluid py-5">
+        <section class="container">
+            <div class="d-flex pb-3">
+                <div class="categories-name">
+                    <h3 class="text-uppercase pe-3">Recent Products</h3>
+                </div>
+                <div class="dashed-border mt-3"></div>
+            </div>
+
+            <section class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-1.jpg" alt="product-1"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-2.jpg" alt="product-2"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-3.jpg" alt="product-3"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-4.jpg" alt="product-4"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-5.jpg" alt="product-5"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-6.jpg" alt="product-6"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-7.jpg" alt="product-7"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="bg-white pb-4">
+                        <div><img src="./images/featured-images/product-8.jpg" alt="product-8"></div>
+                        <div class="text-center pt-3">
+                            <h6 class="featured-box-name">Product Name Goes Here</h6>
+                            <p class="featured-box-para mb-1">$123.00 <del class="featured-price">$124.00</del></p>
+                            <i class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i><i class="fullstar fa-solid fa-star"></i><i
+                                class="fullstar fa-solid fa-star"></i> <span class="badge number-shopping">(99)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="container-fluid pb-5">
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div>
+                        <img src="./images/vendor/vendor-1.jpg" alt="vendor-1">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div>
+                        <img src="./images/vendor/vendor-2.jpg" alt="vendor-2">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div>
+                        <img src="./images/vendor/vendor-3.jpg" alt="vendor-3">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div>
+                        <img src="./images/vendor/vendor-4.jpg" alt="vendor-4">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div>
+                        <img src="./images/vendor/vendor-5.jpg" alt="vendor-5">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
+                    <div>
+                        <img src="./images/vendor/vendor-6.jpg" alt="vendor-6">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="footer-section container-fluid pt-5 px-5">
+        <div class="row text-white pt-5">
+            <div class="col-lg-3 mb-4 mb-lg-0">
+                <div>
+                    <h3 class="footer-heading pb-3">GET IN TOUCH</h3>
+                    <p>No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor. Rebum
+                        tempor no vero est magna amet no</p>
+                </div>
+                <div>
+                    <div><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</div>
+                    <div><a class="text-reset" href=""><i class="fa-solid fa-envelope"></i>mail@domain.com</a></div>
+                    <div><a class="text-reset" href=""><i class="fa-solid fa-phone"></i>+012 345 67890</a></div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+                <div>
+                    <h3 class="footer-heading pb-3">QUICK SHOP</h3>
+                    <ul class="ps-0">
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Our Shop</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Shop Detail</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Shopping Cart</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Checkout</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3 mb-4 mb-md-0">
+                <div>
+                    <h3 class="footer-heading pb-3">MY ACCOUNT</h3>
+                    <ul class="ps-0">
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Home</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Our Shop</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Shop Detail</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Shopping Cart</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Checkout</a></li>
+                        <li><a class="text-reset" href=""><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3 p-0 mb-4 mb-md-0">
+                <div>
+                    <h3 class="footer-heading pb-3">NEWSLETTER</h3>
+                    <p>Duo stet tempor ipsum sit amet magna ipsum tempor est</p>
+                    <div>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="email" placeholder="Your Email Address" class="rounded-0">
+                                <span class="input-group-text footer-sign rounded-0"><button class="btn rounded-0 ">Sign
+                                        Up</button></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h4 class="footer-heading-h4 pb-2">FOLLOW US</h4>
+                        <div class="d-flex">
+                            <div class="social-media ">
+                               <a href=""> <i class="fa-brands fa-square-twitter me-1"></i></a>
+                            </div>
+                            <div class="social-media">
+                               <a href=""> <i class="fa-brands fa-square-facebook me-1 rounded-0"></i></a>
+                            </div>
+                            <div class="social-media">
+                              <a href="">  <i class="fa-brands fa-linkedin me-1 rounded-0"></i></a>
+                            </div>
+                            <div class="social-media">
+                               <a href=""> <i class="fa-brands fa-square-instagram me-1 rounded-0"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-bottom border-light-subtle py-4 mb-4">
+             
+        </div>
+        <section class="pb-3">
+            <div class="d-sm-block d-md-flex flex-wrap justify-content-between text-white">
+                <div class="text-sm-center">
+                    <p>© <span class="domain-color"><a href="" class="">Domain</a></span>.All Rights Reserved. Designed by <span class="domain-color"><a
+                                href="">Parth</a></span></p>
+                </div>
+                <div class="payment text-sm-center">
+                    <img src="./images/footer/payments.png" alt="payments" class="img-fluid" >
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
